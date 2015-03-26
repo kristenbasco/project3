@@ -2,7 +2,7 @@ function guessit(theForm) {
     var quotes;
     quotes = document.getElementsByName('guess');
     colors = document.getElementsByClassName('quote');
-    var score;
+    var score = 0;
     // http://stackoverflow.com/questions/9618504/get-radio-button-value-with-javascript
     for (var i = 0, length = quotes.length; i < length; i++) {
         if (quotes[i].checked) {
@@ -26,8 +26,8 @@ function winning(score){
     var emitting = "Score: "+ score + "<br/>";
     // if like, 10
     if(score==1){
-        document.getElementById("status").innerHTML = emitting + "You've won!";
+        document.getElementById("status").innerHTML = "You've won!";
     }else{
-        document.getElementById("status").innerHTML = emitting;
+        document.getElementById("status").innerHTML = "no";
     }
 }
