@@ -3,7 +3,13 @@ function guessit(theForm) {
     quotes = document.getElementsByName('guess');
     colors = document.getElementsByClassName('quote');
     var score = 0;
-    // http://stackoverflow.com/questions/9618504/get-radio-button-value-with-javascript
+
+    // clear
+    for(var i = 0, length = colors.length; i < length; i++) {
+        colors[i].style.background = "white";
+    }
+
+    // check
     for (var i = 0, length = quotes.length; i < length; i++) {
         if (quotes[i].checked) {
             // do whatever you want with the checked radio
