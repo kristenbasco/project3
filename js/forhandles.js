@@ -1,6 +1,7 @@
 $(function (){
-
-	var context = {name: "Anti-Man"};
+	// I don't know, here instead of 'anti-man' we'd have <php? echo $hero['FirstName']?>
+	// before we'd have generated a random number, connected to db, and querried for id=num
+	var context = {name: "Anti-Man", src:"img/Anti.png"};
 	var source = $("#hero-template").html();
 
 	var htmlthere = "<div id='superhero'>"+

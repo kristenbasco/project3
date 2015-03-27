@@ -15,15 +15,18 @@
 </head>
 
 <body onload="randomup()">
+	<div class="nav">
+	    <a href="gallery.html" >Gallery</a>
+	</div>
+	
 	<h1>SUPER HERO GAME THING</h1>
 	<div id="gamewrapper">
 		
 		<div id='superhero'>
-			<img src='img/Anti.png' alt='pic of hero'/>
-			<script id="hero-template" type="text/x-handlebars-template">
+			<script id="hero-template" type="text/x-handlebars-template">	
+				<img src={{src}} alt='pic of hero'/>
 				<h3>{{name}}</h3>
 			</script>
-			<script src="js/forhandles.js"></script>
 		</div>
 		<div id="supercontent">
 			<div id="headerthing">
@@ -47,8 +50,9 @@
 					</div>
 				</form>
 			</div>
+			<h4 id="status">Score: </h4>
 		</div>
-		<h4 id="status">Score: </h4>
 	</div>
+	<script src="js/forhandles.js"></script>
 </body>
 </html>
