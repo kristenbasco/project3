@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Corny Comics</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="comics.css">
 </head>
 
-<body>
+<body onload="randomup()">
 	<h1>SUPER HERO GAME THING</h1>
 	<div id="gamewrapper">
 		<div id="superhero">
@@ -28,15 +28,15 @@
 				<form action="#" name="myform">
 					<div class="quote">
 						<!-- we'd want to randomize the order of true and false -->
-						<input type="radio" name="guess" value="true" id="rone" onclick="guessit()">
+						<input type="radio" name="guess" id="rone" onclick="guessit()">
 						<label for="rone">My real name is Finneus, and I have over 5000 children.</label>
 					</div>
 					<div class="quote">
-						<input type="radio" name="guess" value="true" id="rtwo" onclick="guessit()">
+						<input type="radio" name="guess" id="rtwo" onclick="guessit()">
 						<label for="rtwo">I fight alongside Fatman the Human Flying Saucer.</label>
 					</div>
 					<div class="quote">
-						<input type="radio" name="guess" value="false" id="rthree" onclick="guessit()">
+						<input type="radio" name="guess" id="rthree" onclick="guessit()">
 						<label for="rthree">My wife demanded I join Fatman and the The Anti-Evil Team.</label>
 					</div>
 				</form>
