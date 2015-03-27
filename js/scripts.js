@@ -29,11 +29,13 @@ function guessit(theForm) {
 }
 
 function winning(score){
+    var score = score;
+    score = score.toString();
     var emitting = "Score: "+ score + "<br/>";
     // if like, 10
     if(score==1){
-        document.getElementById("status").innerHTML = "You've won!";
+        document.getElementById("status").innerHTML = emitting + "You've won!";
     }else{
-        document.getElementById("status").innerHTML = "no";
+        document.getElementById("status").innerHTML = emitting;
     }
 }
