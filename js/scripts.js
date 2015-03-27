@@ -45,9 +45,9 @@ function randomup(){
     var quotes = document.getElementsByName('guess');
     var num = Math.floor((Math.random() * 2));
     for(var i = 0, length = quotes.length; i < length; i++) {
-        quotes[num].value = "false";
-        if(quotes[i].value!="false"){
-            quotes[i].value = "true";
+        quotes[num].value = "true";
+        if(quotes[i].value!="true"){
+            quotes[i].value = "false";
         }
     }
 }   
