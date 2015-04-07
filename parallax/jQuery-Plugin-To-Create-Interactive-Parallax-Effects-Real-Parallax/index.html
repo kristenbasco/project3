@@ -1,0 +1,265 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Real Parallax effect jQuery plugin" />
+<title>jQuery Real Parallax Plugin Demos</title>
+
+<!-- Including styles -->
+<link type="text/css" href="style.css" rel="stylesheet" />
+
+<!--[if IE]>
+	<style type="text/css">
+	.glowbox {
+		border:1px solid;		
+	}
+	</style>
+	<![endif]-->
+
+<!-- Including jQuery -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- Including parallax plugin -->
+<script type="text/javascript" src="jquery.real-parallax.js"></script>
+<script type="text/javascript">
+	   
+		$(document).ready(function(){
+			$('#myParallax1').parallax({width: 390,  height: 270,focusZ:100}); 
+			$('#myParallax2').parallax({width: 390,  height: 270,focusZ:0}); 
+			$('#myParallax3').parallax({width: 390,  height: 270,focusZ:40}); 
+			$('#myParallax4').parallax({width: 390,  height: 270,focusZ:40, sensitivityY:-0.4, sensitivityX:-0.5}); 
+			$('#myParallax5').parallax({width: 390,  height: 270,focusZ:80, sensitivityY:0.4, sensitivityX:1.2, easingCoefficient:30});
+			$('#myParallax6').parallax({width: 390,  height: 270,focusZ:80, sensitivityY:0.4, sensitivityX:1.2, easingCoefficient:0});
+			$('#myParallax7').parallax({width: 390,  height: 270,focusZ:40, sensitivityY:0});
+			$('#myParallax8').parallax({width: 390,  height: 270,focusZ:40, sensitivityX:0, sensitivityY:0.6});
+		});
+
+	</script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/animation/jQuery-Plugin-To-Create-Interactive-Parallax-Effects-Real-Parallax.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="center" style="margin-top:150px;">
+  <h2><a href="index.html">jQuery Real Parallax Plugin Demos</a></h2>
+</div>
+<div class="row">
+  <div class="info">
+    <h3>1 Basic behaviour</h3>
+    <h4>1.1 Parallax Focus</h4>
+    <p>Make the same content behave differently by changing just one parameter</p>
+  </div>
+  
+  <!-- begin of parallax1	-->
+  <div id="myParallax1" class="glowbox overflow-hidden column">
+    <div id="l"></div>
+    <div style="left:-1px;top:-1px;background-image: url(castle.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px"/></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px"/></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">focus: back</p>
+    </div>
+  </div>
+  <!-- end of parallax1 --> 
+  
+  <!-- begin of parallax2	-->
+  <div id="myParallax2" class="glowbox overflow-hidden column">
+    <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px" /></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px" /></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">focus: front</p>
+    </div>
+  </div>
+  <!-- end of parallax2 -->
+  
+  <div class="info">
+    <h4>1.2 Mouse control</h4>
+    <p>Supports inverted X and/or Y mouse sensitivity</p>
+  </div>
+  
+  <!-- begin of parallax3	-->
+  <div id="myParallax3" class="glowbox overflow-hidden column">
+    <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px" /></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px" /></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">default X and Y</p>
+    </div>
+  </div>
+  <!-- end of parallax3 --> 
+  
+  <!-- begin of parallax4	-->
+  <div id="myParallax4" class="glowbox overflow-hidden column">
+    <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px" /></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px" /></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">inverted X and Y</p>
+    </div>
+  </div>
+  <!-- end of parallax4 -->
+  
+  <div class="info">
+    <h4>1.3 Easing</h4>
+    <p>Supports any level of easing</p>
+  </div>
+  
+  <!-- begin of 5	-->
+  <div id="myParallax5" class="glowbox overflow-hidden column">
+    <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px" /></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px" /></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">super easy</p>
+    </div>
+  </div>
+  <!-- end of parallax5 --> 
+  
+  <!-- begin of parallax6	-->
+  <div id="myParallax6" class="glowbox overflow-hidden column">
+    <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px" /></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px" /></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">no easing</p>
+    </div>
+  </div>
+  <!-- end of parallax6 -->
+  
+  <div class="info">
+    <h4>1.4 Parallax Direction</h4>
+    <p>Need only one direction? No problem!</p>
+  </div>
+  
+  <!-- begin of parallax7	-->
+  <div id="myParallax7" class="glowbox overflow-hidden column">
+    <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px" /></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px" /></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">horizontal</p>
+    </div>
+  </div>
+  <!-- end of parallax7 --> 
+  
+  <!-- begin of parallax8	-->
+  <div id="myParallax8" class="glowbox overflow-hidden column">
+    <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+    <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px" /></div>
+    <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px" /></div>
+    <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+    <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+    <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+    <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+    <div style="left:10px;top:240px;" data-lock="yes">
+      <p class="white">vertical</p>
+    </div>
+  </div>
+  <!-- end of parallax8 -->
+  
+
+  
+  
+</div><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

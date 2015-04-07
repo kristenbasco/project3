@@ -1,0 +1,63 @@
+<!doctype>
+<head>
+	<title>Parallax Example</title>	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="jquery.real-parallax.js"></script>
+	<link type="text/css" href="parallax.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="myParallax" class="glowbox overflow-hidden">
+	  	<div id="l"></div>
+	   	<div data-z="90">
+	   		<img src="castle.jpg"/>
+	   	</div>
+	   	<div style="left:300px" data-z="0">
+	   		<img id="hddi" src="hddi_1.png"/>
+	   	</div>
+<!-- 	  <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
+	  <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px"/></div>
+	  <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+	  <div style="left:255px;top:115px;" data-z="70"><img src="g1.png" width="78px" height="98px"/></div>
+	  <div style="left:300px;top:100px;"  data-z="75"><img src="g2.png" width="83px" height="116px" /></div>
+	  <div style="left:-200px;top:177px;background-image: url(grass2.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+	  <div style="left:-200px;top:195px;background-image: url(grass3.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+	  <div style="left:-90px;top:80px;" data-z="35"><img src="tree.png" width="320px" height="160px" /></div>
+	  <div style="left:-200px;top:211px;background-image: url(grass4.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+	  <div style="left:-200px;top:231px;background-image: url(grass5.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+	  <div style="left:400px;top:115px;" data-z="-10"><img src="a1.png" width="200px" height="253px" /></div>
+	  <div style="left:-200px;top:252px;background-image: url(grass6.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
+	  <div style="left:10px;top:240px;" data-lock="yes"></div> -->
+	</div>
+	<div id="text" data-lock="yes"></div>
+	<script type="text/javascript">
+		$('#myParallax').parallax({
+			width: 836,  
+			height: 300,
+			enableMouse: true,
+			activateOnClick: false,
+			sensitivityX: 1,
+			sensitivityY: 0,
+			easingCoefficient: 7,
+			autoZCoordinate: true,
+			useCustomZ: true,
+			focusZ: 100
+		}); 
+
+		$('#myParallax').mousemove(function(){
+			var position = $('#hddi').offset();
+			$('#text').text(position.left);
+			if(position.left >400){
+				$('#hddi').attr("src","hddi_1.png");
+			}else if(position.left <= 400 && position.left > 300){
+				$('#hddi').attr("src","hddi_2.png");
+			}else if(position.left <= 300 && position.left > 200){
+				$('#hddi').attr("src","hddi_3.png");
+			}else if(position.left <= 100){
+				$('#hddi').attr("src","hddi_4.png");
+			}
+		});
+
+
+		
+	</script>
+</body>
