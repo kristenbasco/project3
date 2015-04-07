@@ -11,9 +11,13 @@
 	   	<div data-z="90">
 	   		<img src="castle.jpg"/>
 	   	</div>
-	   	<div style="left:300px" data-z="0">
-	   		<img id="hddi" src="hddi_1.png"/>
+	   	<div style="left:400px;top:-150px;" data-z="70">
+	   		<img id="splode" src="">
 	   	</div>
+	   	<div style="left:250px" data-z="0">
+	   		<img id="hddi" src=""/>
+	   	</div>
+	   	<div id="text" style="left:10px;top:240px;background-color:white;" data-lock="yes"></div>
 <!-- 	  <div style="left:-1px;top:-1px;background-image: url(bg.jpg);background-repeat:repeat-x; height: 285px; width: 410px;" data-lock="yes"></div>
 	  <div style="left:38px;top:23px;" data-z="90"><img src="sun.png" width="332px" height="262px"/></div>
 	  <div style="left:-200px;top:184px;background-image: url(grass1.png);background-repeat:repeat-x; height: 285px; width: 800px;"></div>
@@ -37,7 +41,7 @@
 			activateOnClick: false,
 			sensitivityX: 1,
 			sensitivityY: 0,
-			easingCoefficient: 7,
+			easingCoefficient: 3,
 			autoZCoordinate: true,
 			useCustomZ: true,
 			focusZ: 100
@@ -45,15 +49,20 @@
 
 		$('#myParallax').mousemove(function(){
 			var position = $('#hddi').offset();
-			$('#text').text(position.left);
-			if(position.left >400){
-				$('#hddi').attr("src","hddi_1.png");
-			}else if(position.left <= 400 && position.left > 300){
-				$('#hddi').attr("src","hddi_2.png");
-			}else if(position.left <= 300 && position.left > 200){
-				$('#hddi').attr("src","hddi_3.png");
-			}else if(position.left <= 100){
+			if(position.left > 400){
 				$('#hddi').attr("src","hddi_4.png");
+				$('#text').text("DAMNIT BRIAN!").css("border","1px solid black");
+				$('#splode').attr("src","explosion.png").css("display","block");
+			}else if(position.left <= 400 && position.left > 200){
+				$('#hddi').attr("src","hddi_3.png");
+				$('#text').text("Hoe, don't do it.").css("border","1px solid black");
+				$('#splode').css("display","none");
+			}else if(position.left <= 200 && position.left > 100){
+				$('#hddi').attr("src","hddi_2.png");
+				$('#text').text("You're being a child, Brian.").css("border","1px solid black");
+			}else if(position.left <= 100){
+				$('#hddi').attr("src","hddi_1.png");
+				$('#text').text("Stop it.").css("border","1px solid black");
 			}
 		});
 
