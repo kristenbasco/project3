@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Bangers);
 .overflow-hidden {
   position: relative;
   overflow: hidden;
@@ -32,9 +33,62 @@
 
 .content-img:hover { opacity: 0.65; }
 
+#colwrap{
+  overflow: scroll;
+  white-space: nowrap;
+}
+#myParallax{
+  display: inline-block;
+  margin: 0;
+}
+#myParallax2{
+  margin: 0;
+  display: inline-block;
+}
+
 img{
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+#text{
+  font-family: 'Bangers', cursive;
+  background-color: white;
+  border: 2px black solid;
+  font-size: 1.5em;
+  transform: skewX(160deg);
+}
+
+p{
+  margin: 5px;
+}
+
+#arrows{
+  width: 100%;
+  display: inline-block;
+}
+
+#arrowright, #arrowleft{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+}
+
+#arrowright{
+  text-align: right;
+}
+
+#arrowright img{
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  width: 20%;
+}
+
+#arrowleft img{
+  width: 20%;
 }
