@@ -6,45 +6,50 @@
 	<link type="text/css" href="parallax.css" rel="stylesheet" />
 </head>
 <body>
-	<div id="colwrap">
-		<div id="myParallax" class="glowbox overflow-hidden">
-		  	<div id="l"></div>
-		   	<div data-z="90">
-		   		<img src="castle.jpg"/>
-		   	</div>
-		   	<div style="left:400px;top:-150px;" data-z="70">
-		   		<img id="splode" src="">
-		   	</div>
-		   	<div style="left:250px" data-z="0">
-		   		<img id="hddi" src="hddi_3.png"/>
-		   	</div>
-		   	<div id="text" style="left:30px;top:240px;" data-lock="yes">
-		   		<p>As the villain slowly approaches the explosive you attempt to reason with him.</p>
-		   	</div>
+	<div id="wholeshebang">
+		<div id="dynamicstuff">
+			Name: <input type="text" name="supername" id="supername"><button id="clickme" value="set"></button>
 		</div>
-		<div id="myParallax2" class="glowbox overflow-hidden">
-		   	<div data-z="90">
-		   		<img src="castle.jpg"/>
-		   	</div>
-		   	<div style="left:250px" data-z="0">
-		   		<img src="hddi_3.png"/>
-		   	</div>
-		   	<div style="left:30px;top:240px;" data-lock="yes">
-		   		<p>As the villain slowly approaches the explosive you attempt to reason with him.</p>
-		   	</div>
+		<div id="colwrap">
+			<div id="myParallax" class="glowbox overflow-hidden">
+			  	<div id="l"></div>
+			   	<div data-z="90">
+			   		<img src="castle.jpg"/>
+			   	</div>
+			   	<div style="left:400px;top:-150px;" data-z="70">
+			   		<img id="splode" src="">
+			   	</div>
+			   	<div style="left:250px" data-z="0">
+			   		<img id="hddi" src="hddi_3.png"/>
+			   	</div>
+			   	<div id="text" style="left:30px;top:240px;" data-lock="yes">
+			   		<p>As the villain slowly approaches the explosive you attempt to reason with him.</p>
+			   	</div>
+			</div>
+			<div id="myParallax2" class="glowbox overflow-hidden">
+			   	<div data-z="90">
+			   		<img src="castle.jpg"/>
+			   	</div>
+			   	<div style="left:250px" data-z="0">
+			   		<img src="hddi_3.png"/>
+			   	</div>
+			   	<div style="left:30px;top:240px;" data-lock="yes">
+			   		<p id="namehere"></p>
+			   	</div>
+			</div>
 		</div>
-	</div>
-	<div id="arrows">
-		<div id="arrowleft">
-			<img src="right.png" alt="for navigating the whatsit">
+		<div id="arrows">
+			<div id="arrowleft">
+				<img src="right.png" alt="for navigating the whatsit">
+			</div>
+			<div id="arrowright">
+				<img src="right.png" alt="for navigating the whatsit">
+			</div>
 		</div>
-		<div id="arrowright">
-			<img src="right.png" alt="for navigating the whatsit">
-		</div>
-	</div>
 
 
-	<p id="error"></p>
+		<p id="error"></p>
+	</div>
 
 
 
@@ -107,6 +112,11 @@
 			focusZ: 100
 		}); 
 
+		$('#clickme').click(function(){
+			//dynamic stuff
+			var name = $('#supername').val();
+			$('#namehere').html("<p>"+name+"</p>");
+		});
 
 		function loopleft(){
 		    $('#colwrap').animate({scrollLeft:'-=75'}, 1000, 'linear', loopleft);
