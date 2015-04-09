@@ -4,6 +4,7 @@
 @import url('fonts/animeace.css');
 
 
+
 .overflow-hidden {
   position: relative;
   overflow: hidden;
@@ -40,6 +41,7 @@
 
 #colwrap{
   overflow: scroll;
+  overflow-x:hidden!important;
   white-space: nowrap;
 }
 #myParallax{
@@ -97,4 +99,6 @@ p{
 #arrowleft img{
   width: 20%;
 }
+
+
 
