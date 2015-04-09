@@ -1,4 +1,9 @@
+
 @import url(http://fonts.googleapis.com/css?family=Bangers);
+
+@import url('fonts/animeace.css');
+
+
 .overflow-hidden {
   position: relative;
   overflow: hidden;
@@ -92,3 +97,4 @@ p{
 #arrowleft img{
   width: 20%;
 }
+
