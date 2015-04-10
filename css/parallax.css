@@ -48,13 +48,14 @@ body{
   clear: both;
   width: 100px;
   height: 50px;
-  color: ;
   background-color: #ffa200;
   border: none;
 }
 
 .intro-offscreen{
   visibility: hidden;
+  -webkit-transition: 0.55s fade;
+  -ms-transition: 0.55s fade;
   transition: 0.55s fade;
 }
 
@@ -214,3 +215,61 @@ p{
   z-index: 5;
 }
 
+
+/*rotation stuff*/
+#globe{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  background-color: white;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+/*  border-top-right-radius: 40px;
+  border-top-right-radius: 40px;*/
+  /*border: 1px solid white;*/
+  -webkit-transition: width 2s 2s;
+  -ms-transition: width 2s 2s;
+  transition: width 2s 2s;
+}
+
+#globe img{
+  width: 80px;
+  height: 80px;
+  float: right;
+  -webkit-animation:spinny 4s linear infinite;
+  -moz-animation:spinny 4s linear infinite;
+  animation:spinny 4s linear infinite;
+}
+
+@-moz-keyframes spinny { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spinny { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spinny { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*#globe:hover{
+  width: 800px;
+}*/
+
+#mainbody{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background-color: grey;*/
+ /* -webkit-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  transition: opacity 2s;*/
+}
+
+#globetext{
+  float: left;
+  color: black;
+/*  opacity: 0;
+  -webkit-transition: opacity 2s 2s;
+  -ms-transition: opacity 2s 2s;
+  transition: opacity 2s 2s;*/
+}
+
+#globe:hover #mainbody{
+  opacity: 1;
+}

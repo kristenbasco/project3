@@ -1,8 +1,10 @@
 var height = window.innerHeight;
+var width = window.innerWidth;
 // var arrowheight = $('#arrows').height();
 // var difheight = height - arrowheight;
 
 var height = height-168;
+var width = width*.8;
 
 $('.intro-button').on('click', function(event) {
   $(this).closest('.intro').addClass('intro-offscreen');
@@ -10,6 +12,24 @@ $('.intro-button').on('click', function(event) {
 
 $(function(){
 	$('#anotherdiv').css("top",height);
+});
+
+// reading mouseout even if I just started hovering
+$('#globe').hover(function() {
+	$('#globe').css("width",width);
+	var pls = $('#globe').width();
+	if(pls>=width/2){
+		// $('#mainbody').css("opacity","1");
+		$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
+	}
+});
+$('#globe').mouseout(function() {
+	$('#globe').css("width","80px");
+	// if($('#globe').width()==width){
+		// $('#mainbody').css("opacity","0");
+		$('#globetext').empty();
+
+	// }
 });
 
 $('#myParallax').parallax({
@@ -113,5 +133,29 @@ $("#arrowleft img").hover(function () {
 
 // });
 
-
+// var globestuff = function(){
+	// $("#globe").hover(function () {
+	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
+	// 	$('#globetext').css("display","block");
+	// 	$('#globetext').css("opacity","1");
+	// });
+	// $("#globe").mouseeenter(function () {
+	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
+	// });
+	// $("#mainbody").hover(function () {
+	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
+	// 	$('#globetext').css("display","block");
+	// 	$('#globetext').css("opacity","1");
+	// });
+	// $("#globetext").hover(function () {
+	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
+	// 	$('#globetext').css("display","block");
+	// 	$('#globetext').css("opacity","1");
+	// });
+	// $("#globe").mouseout(function () {
+	// 	$('#globetext').css("opacity","0");
+	// 	$('#globetext').css("display","none");
+	// 	$('#globetext').empty();
+	// });
+// }
 		
