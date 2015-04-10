@@ -20,7 +20,23 @@ body{
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-left: 2.5%;
+  /*margin-left: 2.5%;*/
+  overflow: scroll;
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;/*
+  background-color: rgba(0,0,0,.5);
+  border-top: 10px solid rgba(0,0,0,.5) ;*/
+}
+#anotherdiv{
+  position: absolute;
+  /*top: 625px;*/
+  /*left: -2.5%;*/
+  width: 100%;
+  height: 168px;
+  background-image: url('../img/city-v2.png');
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  z-index: -2;
 }
 
 .overflow-hidden {
@@ -31,7 +47,7 @@ body{
 }
 
 .glowbox {
-  box-shadow: rgba(0,0,0,.5) 5px 5px;
+/*  box-shadow: rgba(0,0,0,.5) 5px 5px;*/
 }
 
 .innerglowbox {
@@ -56,18 +72,41 @@ body{
 .content-img:hover { opacity: 0.65; }
 
 #colwrap{
-  overflow: scroll;
-  overflow-x: hidden!important;
   white-space: nowrap;
-  /*background-color: rgba(0,0,0,.2);*/
+  overflow: visible;
 }
+
 #myParallax{
   display: inline-block;
   margin: 0;
+  /*margin-left: 10%;*/
 }
 #myParallax2{
   margin: 0;
   display: inline-block;
+}
+
+#borderstuff1{
+  border: 2px solid rgba(0,0,0,.2);
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 10%;
+  padding: 0;
+}
+#borderstuff2{
+  border: 2px solid rgba(0,0,0,.2);
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 5%;
+  padding: 0;
+}
+
+.outline{
+    border: 2px solid rgba(0,0,0,.6);
+}
+
+.thickborder{
+  border: 25px solid #FFFFEB;
 }
 
 img{

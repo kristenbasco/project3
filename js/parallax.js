@@ -1,16 +1,16 @@
-// var height = window.innerHeight;
+var height = window.innerHeight;
 // var arrowheight = $('#arrows').height();
 // var difheight = height - arrowheight;
 
-// var height = height*.75;
+var height = height-168;
 
-// $(function(){
-// 	$('#arrows').css("top",-difheight);
-// });
+$(function(){
+	$('#anotherdiv').css("top",height);
+});
 
 $('#myParallax').parallax({
 	width: 836,  
-	height: 650,
+	height: 600,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
@@ -55,7 +55,7 @@ $('#myParallax').mouseout(function(){
 
 $('#myParallax2').parallax({
 	width: 836,  
-	height: 650,
+	height: 600,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
@@ -74,16 +74,21 @@ $('#clickme').click(function(){
 	$('#namehere').html("<p>"+name+"</p>");
 });
 
+$("#supername").enterKey(function () {
+    var name = $('#supername').val();
+	$('#namehere').html("<p>"+name+"</p>");
+})
+
 function loopleft(){
-    $('#colwrap').animate({scrollLeft:'-=75'}, 1000, 'linear', loopleft);
+    $('#wholeshebang').animate({scrollLeft:'-=200'}, 1000, 'linear', loopleft);
 }  
 
 function loopright(){
-    $('#colwrap').animate({scrollLeft:'+=75'}, 1000, 'linear', loopright);
+    $('#wholeshebang').animate({scrollLeft:'+=200'}, 1000, 'linear', loopright);
 }        
 
 function stop(){
-    $('#colwrap').stop();
+    $('#wholeshebang').stop();
 }
 
 // $(window).mousemove(function(){
