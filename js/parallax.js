@@ -74,10 +74,7 @@ $('#clickme').click(function(){
 	$('#namehere').html("<p>"+name+"</p>");
 });
 
-$("#supername").enterKey(function () {
-    var name = $('#supername').val();
-	$('#namehere').html("<p>"+name+"</p>");
-})
+
 
 function loopleft(){
     $('#wholeshebang').animate({scrollLeft:'-=200'}, 1000, 'linear', loopleft);
