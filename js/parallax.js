@@ -1,6 +1,16 @@
+// var height = window.innerHeight;
+// var arrowheight = $('#arrows').height();
+// var difheight = height - arrowheight;
+
+// var height = height*.75;
+
+// $(function(){
+// 	$('#arrows').css("top",-difheight);
+// });
+
 $('#myParallax').parallax({
 	width: 836,  
-	height: 700,
+	height: 650,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
@@ -45,7 +55,7 @@ $('#myParallax').mouseout(function(){
 
 $('#myParallax2').parallax({
 	width: 836,  
-	height: 700,
+	height: 650,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
