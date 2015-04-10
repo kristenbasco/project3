@@ -20,7 +20,7 @@ body{
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-left: 100px;
+  margin-left: 2.5%;
 }
 
 .overflow-hidden {
@@ -94,7 +94,11 @@ p{
 #arrows{
   width: 100%;
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #arrowright, #arrowleft{
