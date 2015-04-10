@@ -1,6 +1,6 @@
 $('#myParallax').parallax({
 	width: 836,  
-	height: 300,
+	height: 700,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
@@ -45,11 +45,11 @@ $('#myParallax').mouseout(function(){
 
 $('#myParallax2').parallax({
 	width: 836,  
-	height: 300,
+	height: 700,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
-	sensitivityY: 0,
+	sensitivityY: 1,
 	easingCoefficient: 7,
 	autoZCoordinate: true,
 	useCustomZ: true,
