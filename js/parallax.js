@@ -4,6 +4,10 @@ var height = window.innerHeight;
 
 var height = height-168;
 
+$('.intro-button').on('click', function(event) {
+  $(this).closest('.intro').addClass('intro-offscreen');
+});
+
 $(function(){
 	$('#anotherdiv').css("top",height);
 });
