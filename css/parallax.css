@@ -15,7 +15,7 @@ body{
 }
 
 .intro {
-  z-index: 1;
+  z-index: 11;
   background-color: #fcffb0;
   background-image: 
   radial-gradient(circle, orange 12%, transparent 10%),
@@ -80,7 +80,7 @@ body{
   background-image: url('../img/city-v2.png');
   background-repeat: repeat-x;
   background-size: 100% 100%;
-  z-index: 3;
+  z-index: -1;
 }
 
 .overflow-hidden {
