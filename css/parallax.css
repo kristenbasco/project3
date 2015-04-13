@@ -229,9 +229,9 @@ p{
 /*  border-top-right-radius: 40px;
   border-top-right-radius: 40px;*/
   /*border: 1px solid white;*/
-  -webkit-transition: width 2s 2s;
-  -ms-transition: width 2s 2s;
-  transition: width 2s 2s;
+  -webkit-transition: width 2s;
+  -ms-transition: width 2s;
+  transition: width 2s;
 }
 
 #globe img{
@@ -256,9 +256,9 @@ p{
   top: 0;
   left: 0;
   /*background-color: grey;*/
- /* -webkit-transition: opacity 2s;
+  -webkit-transition: opacity 2s;
   -ms-transition: opacity 2s;
-  transition: opacity 2s;*/
+  transition: opacity 2s;
 }
 
 #globetext{

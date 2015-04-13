@@ -15,19 +15,25 @@ $(function(){
 });
 
 // reading mouseout even if I just started hovering
-$('#globe').hover(function() {
+$('#globe img').hover(function() {
 	$('#globe').css("width",width);
-	var pls = $('#globe').width();
-	if(pls>=width/2){
-		// $('#mainbody').css("opacity","1");
-		$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
-	}
+	$('#mainbody').html("<p>Breaking News</p>");
+	$('#mainbody').css("opacity","1");
+});
+$('#globe').mouseenter(function() {
+	$('#globe').css("width",width);
+	// var pls = $('#globe').width();
+	// if(pls>=width/2){
+	$('#mainbody').html("<p>Breaking News</p>");
+	$('#mainbody').css("opacity","1");
+	// $('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
+	// }
 });
 $('#globe').mouseout(function() {
 	$('#globe').css("width","80px");
 	// if($('#globe').width()==width){
 		// $('#mainbody').css("opacity","0");
-		$('#globetext').empty();
+		$('#mainbody').empty();
 
 	// }
 });
