@@ -3,7 +3,7 @@ var width = window.innerWidth;
 // var arrowheight = $('#arrows').height();
 // var difheight = height - arrowheight;
 
-var height = height-168;
+var height = height-753;
 var width = width*.8;
 
 $('.intro-button').on('click', function(event) {
@@ -15,25 +15,32 @@ $(function(){
 });
 
 // reading mouseout even if I just started hovering
-$('#globe img').hover(function() {
-	$('#globe').css("width",width);
-	$('#mainbody').html("<p>Breaking News</p>");
-	$('#mainbody').css("opacity","1");
-});
+// $('#globe img').mouseenter(function() {
+// 	$('#globe').css("width",width);
+// 	$("ul#ticker01").liScroll({travelocity: 0.05});
+// 	$('ul#ticker01').css("opacity","1");
+// });
 $('#globe').mouseenter(function() {
 	$('#globe').css("width",width);
-	// var pls = $('#globe').width();
-	// if(pls>=width/2){
-	$('#mainbody').html("<p>Breaking News</p>");
+	// $('#mainbody').css("display","block");
 	$('#mainbody').css("opacity","1");
-	// $('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
-	// }
+
+	var w = $('#globe').css("width");
+	if(	w <= width ) {
+		$('#globe').css("background-color","blue");
+		// $('ul#ticker01').html("<div class='tickercontainer'><li><span>10/10/2007</span><p>The first thing ...</p></li><li><span>10/10/2007</span><p>End up doing is ...</p></li><li><span>10/10/2007</span><p>The code that you ...</p></li></div>");
+		$("ul#ticker01").liScroll({travelocity: 0.05});	
+		$('ul#ticker01').css("opacity","1");
+	}
+
 });
-$('#globe').mouseout(function() {
+$('#globe').click(function() {
 	$('#globe').css("width","80px");
 	// if($('#globe').width()==width){
-		// $('#mainbody').css("opacity","0");
-		$('#mainbody').empty();
+		$('#mainbody').css("opacity","0");
+		// $('#mainbody').css("display","none");
+		// $('#mainbody').css("display","block");
+		// $('#mainbody').empty();
 
 	// }
 });

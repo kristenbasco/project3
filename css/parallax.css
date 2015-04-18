@@ -74,11 +74,10 @@ body{
 }
 #anotherdiv{
   position: absolute;
-  /*top: 625px;*/
   /*left: -2.5%;*/
   width: 100%;
-  height: 168px;
-  background-image: url('../img/city-v2.png');
+  height: 753px;
+  background-image: url('../img/city1.png');
   background-repeat: repeat-x;
   background-size: 100% 100%;
   z-index: -1;
@@ -255,10 +254,11 @@ p{
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
   /*background-color: grey;*/
-  -webkit-transition: opacity 2s;
-  -ms-transition: opacity 2s;
-  transition: opacity 2s;
+  -webkit-transition: opacity 2s 2s;
+  -ms-transition: opacity 2s 2s;
+  transition: opacity 2s 2s;
 }
 
 #globetext{
@@ -268,8 +268,4 @@ p{
   -webkit-transition: opacity 2s 2s;
   -ms-transition: opacity 2s 2s;
   transition: opacity 2s 2s;*/
-}
-
-#globe:hover #mainbody{
-  opacity: 1;
 }
