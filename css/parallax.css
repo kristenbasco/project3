@@ -109,10 +109,10 @@ body{
   padding: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* Standard syntax (must be last) *//*background-size: 100% 100%;*/
+  background: -webkit-linear-gradient(top, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* Standard syntax (must be last) *//*background-size: 100% 100%;*/
   z-index: -1;
 }
 
@@ -167,7 +167,7 @@ body{
   border: 2px solid rgba(0,0,0,.2);
   white-space: nowrap;
   display: inline-block;
-  margin-left: 20%;
+  margin-left: 12%;
   padding: 0;
 }
 #borderstuff2{
@@ -266,9 +266,6 @@ p{
   background-color: white;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
-/*  border-top-right-radius: 40px;
-  border-top-right-radius: 40px;*/
-  /*border: 1px solid white;*/
   -webkit-transition: width 2s;
   -ms-transition: width 2s;
   transition: width 2s;
@@ -287,43 +284,28 @@ p{
 @-webkit-keyframes spinny { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spinny { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-/*#globe:hover{
-  width: 800px;
-}*/
-
 #mainbody{
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  /*background-color: grey;*/
-  -webkit-transition: opacity 2s 2s;
-  -ms-transition: opacity 2s 2s;
-  transition: opacity 2s 2s;
+  display: inline-block;
+  -webkit-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  transition: opacity .5s;
 }
-
-#globetext{
-  float: left;
-  color: black;
-/*  opacity: 0;
-  -webkit-transition: opacity 2s 2s;
-  -ms-transition: opacity 2s 2s;
-  transition: opacity 2s 2s;*/
-}
-
-
-
-
 
 /*tickertape inside the globe*/
 .tickercontainer { 
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
   background: #fff; 
   width: 720px; 
   height: 78px; 
   margin: 0; 
   padding: 0;
   overflow: hidden; 
+
+  z-index: 2;
 }
 
 .tickercontainer .mask {
@@ -332,11 +314,12 @@ p{
   top: 8px;
   width: 700px;
   overflow: hidden;
+  z-index: 2;
 }
 
 ul.newsticker { 
   position: relative;
-  left: 750px;
+  left: 1050px;
   font: bold 10px Courier;
   list-style-type: none;
   margin: 0;
@@ -362,5 +345,4 @@ ul.newsticker a {
 ul.newsticker span {
   margin: 0 10px 0 0;
 } 
-
 

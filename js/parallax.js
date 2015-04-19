@@ -11,16 +11,25 @@ $('.intro-button').on('click', function(event) {
 // setting up main page stuff
 $(function(){
 	// $('#anotherdiv').css("top",height);
-	$('#mainbody').hide();
+	// $('#mainbody').hide();
+	
 	$('#globe').css("top",(height-100));
-
-    $("ul#ticker02").liScroll();
+	$('#bigtick').css("top",(height-100));
 
 
 	setTimeout(function () {
-		$('#globe').css("width","800px");	
-		$('#mainbody').delay(2000).show(0);	
-		$('#mainbody').css("opacity","1");
+		$('#globe').css("width","800px");
+
+		// $('#mainbody').delay(2000).show(0);	
+
+		$('#mainbody')
+		  .delay(2000)
+		  .queue( function(next){ 
+		    $(this).css("opacity","1")
+		    next(); 
+		  });
+
+		// $('#mainbody').delay(4000).css("opacity","1");
 		// $('ul#ticker01').html("<li><p>Breaking news... </p><p>WKCD news at 6, Awesome Dude arrives at the scene of a fire on 31st street...</p> <p>Also on the scene is fellow hero Brian McJungleman...</p><p>We await on the scene as events unfold...</p></li>");
 		// $('ul#ticker01').html("<li><span>10/10/2007</span><a href='#'>The code that you ...</a></li><li><span>10/10/2007</span><a href='#'>The code that you ...</a></li>");	
 		$("ul#ticker01").liScroll({travelocity: 0.1});	
@@ -29,8 +38,37 @@ $(function(){
 
 // the news globe thing
 $('#globe').click(function() {
-	$('#globe').css("width","80px");
-	$('#mainbody').hide();
+	var gw = $('#globe').width();	
+
+	if(gw == 800){
+		$('#globe').delay(500)
+		  .queue( function(next){ 
+		    $(this).css("width","80px")
+		    next(); 
+		});
+
+		$('#mainbody').css("opacity","0");
+		// $('#mainbody').hide();
+	}
+	else{
+		$('#globe').css("width","800px");
+
+	
+		// setTimeout(function () {
+		// 	$('#mainbody').delay(2000).show(0);
+		// 	$('#mainbody').css("display","inline-block");
+		// }, 2000);
+
+		$('#mainbody')
+		  .delay(2000)
+		  .queue( function(next){ 
+		    $(this).css("opacity","1")
+		    next(); 
+		});
+		
+		// $("ul#ticker01").liScroll({travelocity: 0.1});	
+	}
+
 });
 
 // different messages
