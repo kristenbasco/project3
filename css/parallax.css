@@ -7,9 +7,9 @@ body{
   background-color: rgba(255,255,0,.3);
   background-image: 
   radial-gradient(circle, orange 12%, transparent 10%),
-  radial-gradient(circle, red 12%, transparent 10%),
+  radial-gradient(circle, grey 12%, transparent 10%),
   radial-gradient(circle, orange 12%, transparent 10%),
-  radial-gradient(circle, red 12%, transparent 10%);
+  radial-gradient(circle, grey 12%, transparent 10%);
   background-size: 50px 50px;
   background-position: 0 0, 2.5px 2.5px, 25px 25px, 27.5px 27.5;
 }
@@ -59,6 +59,10 @@ body{
   transition: 0.55s fade;
 }
 
+
+
+
+
 #wholeshebang{
   position: relative;
   top: 50%;
@@ -72,14 +76,43 @@ body{
   background-color: rgba(0,0,0,.5);
   border-top: 10px solid rgba(0,0,0,.5) ;*/
 }
+/*background city*/
 #anotherdiv{
   position: absolute;
-  /*left: -2.5%;*/
+  top: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 753px;
+  background: -webkit-linear-gradient(left top, rgba(255,153,0,0.5) , rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(255,153,0,0.5), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(255,153,0,0.5), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(255,153,0,0.5) , rgba(255,0,0,1)); /* Standard syntax (must be last) *//*background-size: 100% 100%;*/
+  z-index: -1;
+}
+#aseconddiv{
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../img/city1.png');
   background-repeat: repeat-x;
-  background-size: 100% 100%;
+  background-size: 100% 50%;
+  z-index: -1;
+}
+#lastone{
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, rgba(43,17,3,0) 10%, rgba(43,17,3,1) 40%); /* Standard syntax (must be last) *//*background-size: 100% 100%;*/
   z-index: -1;
 }
 
@@ -134,14 +167,14 @@ body{
   border: 2px solid rgba(0,0,0,.2);
   white-space: nowrap;
   display: inline-block;
-  margin-left: 10%;
+  margin-left: 20%;
   padding: 0;
 }
 #borderstuff2{
   border: 2px solid rgba(0,0,0,.2);
   white-space: nowrap;
   display: inline-block;
-  margin-right: 5%;
+  margin-right: 12%;
   padding: 0;
 }
 
@@ -173,6 +206,9 @@ img{
 p{
   margin: 5px;
 }
+
+
+
 
 #arrows{
   width: 100%;
@@ -210,16 +246,21 @@ p{
   padding: 15px;
 }
 
+
+
+
+
 #dynamicstuff{
   z-index: 5;
 }
 
 
-/*rotation stuff*/
+
+
+/*breaking news*/
 #globe{
   z-index: 1;
   position: absolute;
-  top: 0;
   left: 0;
   width: 80px;
   background-color: white;
@@ -269,3 +310,57 @@ p{
   -ms-transition: opacity 2s 2s;
   transition: opacity 2s 2s;*/
 }
+
+
+
+
+
+/*tickertape inside the globe*/
+.tickercontainer { 
+  border: 1px solid #000;
+  background: #fff; 
+  width: 720px; 
+  height: 78px; 
+  margin: 0; 
+  padding: 0;
+  overflow: hidden; 
+}
+
+.tickercontainer .mask {
+  position: relative;
+  left: 10px;
+  top: 8px;
+  width: 700px;
+  overflow: hidden;
+}
+
+ul.newsticker { 
+  position: relative;
+  left: 750px;
+  font: bold 10px Courier;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.newsticker li {
+  float: left; 
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+ul.newsticker a {
+  white-space: nowrap;
+  padding: 0;
+  color: #ff0000;
+  font: bold 10px Bangers;
+  margin: 0 50px 0 0;
+  text-decoration: none;
+} 
+
+ul.newsticker span {
+  margin: 0 10px 0 0;
+} 
+
+

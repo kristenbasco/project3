@@ -1,53 +1,50 @@
 var height = window.innerHeight;
 var width = window.innerWidth;
-// var arrowheight = $('#arrows').height();
-// var difheight = height - arrowheight;
-
-var height = height-753;
+// var height = height-753;
 var width = width*.8;
 
+// splash page
 $('.intro-button').on('click', function(event) {
   $(this).closest('.intro').addClass('intro-offscreen');
 });
 
+// setting up main page stuff
 $(function(){
-	$('#anotherdiv').css("top",height);
+	// $('#anotherdiv').css("top",height);
+	$('#mainbody').hide();
+	$('#globe').css("top",(height-100));
+
+    $("ul#ticker02").liScroll();
+
+
+	setTimeout(function () {
+		$('#globe').css("width","800px");	
+		$('#mainbody').delay(2000).show(0);	
+		$('#mainbody').css("opacity","1");
+		// $('ul#ticker01').html("<li><p>Breaking news... </p><p>WKCD news at 6, Awesome Dude arrives at the scene of a fire on 31st street...</p> <p>Also on the scene is fellow hero Brian McJungleman...</p><p>We await on the scene as events unfold...</p></li>");
+		// $('ul#ticker01').html("<li><span>10/10/2007</span><a href='#'>The code that you ...</a></li><li><span>10/10/2007</span><a href='#'>The code that you ...</a></li>");	
+		$("ul#ticker01").liScroll({travelocity: 0.1});	
+	}, 3000);
 });
 
-// reading mouseout even if I just started hovering
-// $('#globe img').mouseenter(function() {
-// 	$('#globe').css("width",width);
-// 	$("ul#ticker01").liScroll({travelocity: 0.05});
-// 	$('ul#ticker01').css("opacity","1");
-// });
-$('#globe').mouseenter(function() {
-	$('#globe').css("width",width);
-	// $('#mainbody').css("display","block");
-	$('#mainbody').css("opacity","1");
-
-	var w = $('#globe').css("width");
-	if(	w <= width ) {
-		$('#globe').css("background-color","blue");
-		// $('ul#ticker01').html("<div class='tickercontainer'><li><span>10/10/2007</span><p>The first thing ...</p></li><li><span>10/10/2007</span><p>End up doing is ...</p></li><li><span>10/10/2007</span><p>The code that you ...</p></li></div>");
-		$("ul#ticker01").liScroll({travelocity: 0.05});	
-		$('ul#ticker01').css("opacity","1");
-	}
-
-});
+// the news globe thing
 $('#globe').click(function() {
 	$('#globe').css("width","80px");
-	// if($('#globe').width()==width){
-		$('#mainbody').css("opacity","0");
-		// $('#mainbody').css("display","none");
-		// $('#mainbody').css("display","block");
-		// $('#mainbody').empty();
-
-	// }
+	$('#mainbody').hide();
 });
+
+// different messages
+// var breakingnews = function(){
+// if on first page, ticker reads x, if on a different page, it reads y
+// }
+
+
+
+
 
 $('#myParallax').parallax({
 	width: 836,  
-	height: 600,
+	height: 400,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
@@ -92,7 +89,7 @@ $('#myParallax').mouseout(function(){
 
 $('#myParallax2').parallax({
 	width: 836,  
-	height: 600,
+	height: 400,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
@@ -112,7 +109,7 @@ $('#clickme').click(function(){
 });
 
 
-
+// moving using the arrows
 function loopleft(){
     $('#wholeshebang').animate({scrollLeft:'-=200'}, 1000, 'linear', loopleft);
 }  
@@ -125,50 +122,16 @@ function stop(){
     $('#wholeshebang').stop();
 }
 
-// $(window).mousemove(function(){
 $("#arrowright img").hover(function () {
    loopright();
 },function () {
    stop();
 });
 
-
-	// left
-	// if(position.left <= 100){
-	// 	loopleft();
-	// }
 $("#arrowleft img").hover(function () {
    loopleft();
 },function () {
    stop();
 });
 
-
-// });
-
-// var globestuff = function(){
-	// $("#globe").hover(function () {
-	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
-	// 	$('#globetext').css("display","block");
-	// 	$('#globetext').css("opacity","1");
-	// });
-	// $("#globe").mouseeenter(function () {
-	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
-	// });
-	// $("#mainbody").hover(function () {
-	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
-	// 	$('#globetext').css("display","block");
-	// 	$('#globetext').css("opacity","1");
-	// });
-	// $("#globetext").hover(function () {
-	// 	$('#globetext').text("Breaking news from KXCY newsfloor, Awesome Man has teamed up with a sidekick by the name of Sidekick");
-	// 	$('#globetext').css("display","block");
-	// 	$('#globetext').css("opacity","1");
-	// });
-	// $("#globe").mouseout(function () {
-	// 	$('#globetext').css("opacity","0");
-	// 	$('#globetext').css("display","none");
-	// 	$('#globetext').empty();
-	// });
-// }
 		
