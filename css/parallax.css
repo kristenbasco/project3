@@ -169,22 +169,29 @@ body{
   display: inline-block;
   margin: 0;
   /*margin-left: 10%;*/
-  z-index: 5;
+/*  z-index: 5;*/
 }
 #myParallax2{
   margin: 0;
   display: inline-block;
-  z-index: 5;
+/*  z-index: 5;*/
 }
 
-#borderstuff1{
+#borderfirst{
   border: 2px solid rgba(0,0,0,.2);
   white-space: nowrap;
   display: inline-block;
   margin-left: 12%;
   padding: 0;
 }
-#borderstuff2{
+.middlestuff{
+  border: 2px solid rgba(0,0,0,.2);
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: .5%;
+  padding: 0;
+}
+#borderlast{
   border: 2px solid rgba(0,0,0,.2);
   white-space: nowrap;
   display: inline-block;
@@ -200,14 +207,7 @@ body{
   border: 25px solid #FFFFEB;
 }
 
-img{
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-#text,#namehere{
+.text,#namehere{
   font-family: 'AA Regular', cursive;
   background-color: white;
   border: 2px black solid;
@@ -215,6 +215,28 @@ img{
   -webkit-transform: skewX(160deg);
   -ms-transform: skewX(160deg);
   transform: skewX(160deg);
+
+  white-space: normal;      /* CSS3 */   
+  white-space: -moz-normal; /* Firefox */    
+  white-space: -normal;     /* Opera <7 */   
+  white-space: -o-normal;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
+}
+
+#bigtext{
+  font-family: 'AA Regular', cursive;
+  background-color: white;
+  border: 2px black solid;
+  font-size: .9em;
+  white-space: normal;      /* CSS3 */   
+  white-space: -moz-normal; /* Firefox */    
+  white-space: -normal;     /* Opera <7 */   
+  white-space: -o-normal;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
+}
+
+#bigtext p{
+  padding: 5px;
 }
 
 p{
@@ -304,10 +326,6 @@ p{
 }
 
 #arrowright img{
-  -moz-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
   width: 100%;
   height: 10%;
   /*padding: 15px;*/
@@ -325,6 +343,10 @@ p{
 #arrowleft img{
   width: 100%;
   height: 10%;
+    -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   /*padding: 15px;*/
 }
 
@@ -341,7 +363,7 @@ p{
 
 /*breaking news*/
 #globe{
-  /*z-index: 3;*/
+  z-index: 3;
   position: absolute;
   left: 0;
   top: 5%;
@@ -365,9 +387,9 @@ p{
   animation:spinny 4s linear infinite;
 }
 
-@-moz-keyframes spinny { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spinny { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spinny { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-moz-keyframes spinny { 100% { -moz-transform: rotateY(360deg); } }
+@-webkit-keyframes spinny { 100% { -webkit-transform: rotateY(360deg); } }
+@keyframes spinny { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
 
 #mainbody{
   position: absolute;
@@ -390,7 +412,7 @@ p{
   padding: 0;
   overflow: hidden; 
 
-  z-index: 2;
+  /*z-index: 2;*/
 }
 
 .tickercontainer .mask {
@@ -400,7 +422,7 @@ p{
   width: 700px;
   height: 70px;
   overflow: hidden;
-  z-index: 2;
+  /*z-index: 2;*/
 }
 
 ul.newsticker { 
