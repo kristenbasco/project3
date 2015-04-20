@@ -13,8 +13,7 @@ $(function(){
 	// $('#anotherdiv').css("top",height);
 	// $('#mainbody').hide();
 	
-	$('#globe').css("top",(height-100));
-	$('#bigtick').css("top",(height-100));
+	// $('#arrows').css("top",(height-100));
 
 
 	setTimeout(function () {
@@ -160,11 +159,21 @@ function stop(){
     $('#wholeshebang').stop();
 }
 
+// function clickright(){
+// 	$('#wholeshebang').animate({scrollLeft:'+=836'}, 1000, 'linear', clickright);
+// }
+
 $("#arrowright img").hover(function () {
    loopright();
 },function () {
    stop();
 });
+
+// $("#arrowright img").click(function () {
+// 	clickright();
+// },function () {
+//    stop();
+// });
 
 $("#arrowleft img").hover(function () {
    loopleft();

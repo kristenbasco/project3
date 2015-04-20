@@ -63,19 +63,10 @@ body{
 
 
 
-#wholeshebang{
-  position: relative;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  /*margin-left: 2.5%;*/
-  overflow: scroll;
-  overflow-x: hidden!important;
-  overflow-y: hidden!important;/*
-  background-color: rgba(0,0,0,.5);
-  border-top: 10px solid rgba(0,0,0,.5) ;*/
-}
+
+
+
+
 /*background city*/
 #anotherdiv{
   position: absolute;
@@ -116,6 +107,27 @@ body{
   z-index: -1;
 }
 
+
+
+
+
+
+
+
+#wholeshebang{
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /*margin-left: 2.5%;*/
+  overflow: scroll;
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;/*
+  background-color: rgba(0,0,0,.5);
+  border-top: 10px solid rgba(0,0,0,.5) ;*/
+  z-index: 3;
+}
 .overflow-hidden {
   position: relative;
   overflow: hidden;
@@ -157,10 +169,12 @@ body{
   display: inline-block;
   margin: 0;
   /*margin-left: 10%;*/
+  z-index: 5;
 }
 #myParallax2{
   margin: 0;
   display: inline-block;
+  z-index: 5;
 }
 
 #borderstuff1{
@@ -209,8 +223,8 @@ p{
 
 
 
-
-#arrows{
+/*previous, working*/
+/*#arrows{
   width: 100%;
   display: inline-block;
   position: absolute;
@@ -244,6 +258,74 @@ p{
 #arrowleft img{
   width: 15%;
   padding: 15px;
+}*/
+
+
+
+
+/*not working*/
+#arrows{
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  display: inline-block;
+  cursor: pointer;
+/*  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);*/
+  /*z-index: 4;*/
+}
+
+#arrowright, #arrowleft{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 7.5%;
+  /*no height or it won't work*/
+  /*height: 455px;*/
+/*  background-color: gray;*/
+
+/*  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -o-filter: blur(20px);
+  -ms-filter: blur(20px);
+  filter: blur(20px);*/
+  /*opacity: 0.7;*/
+
+}
+
+#arrowleft{
+    margin-left: .5%;
+}
+
+#arrowright{
+  text-align: right;
+  margin-left: 83.5%;
+}
+
+#arrowright img{
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  width: 100%;
+  height: 10%;
+  /*padding: 15px;*/
+
+
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+  opacity: 1;
+
+}
+
+#arrowleft img{
+  width: 100%;
+  height: 10%;
+  /*padding: 15px;*/
 }
 
 
@@ -259,9 +341,10 @@ p{
 
 /*breaking news*/
 #globe{
-  z-index: 1;
+  /*z-index: 3;*/
   position: absolute;
   left: 0;
+  top: 5%;
   width: 80px;
   background-color: white;
   border-top-right-radius: 40px;
@@ -269,6 +352,8 @@ p{
   -webkit-transition: width 2s;
   -ms-transition: width 2s;
   transition: width 2s;
+
+  cursor: pointer;
 }
 
 #globe img{
@@ -313,6 +398,7 @@ p{
   left: 10px;
   top: 8px;
   width: 700px;
+  height: 70px;
   overflow: hidden;
   z-index: 2;
 }
@@ -320,7 +406,9 @@ p{
 ul.newsticker { 
   position: relative;
   left: 1050px;
-  font: bold 10px Courier;
+  top: 22px;
+  font: bold 15px Bangers;
+  color: #ff0000;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -333,16 +421,18 @@ ul.newsticker li {
   background: #fff;
 }
 
-ul.newsticker a {
+ul.newsticker p {
   white-space: nowrap;
   padding: 0;
-  color: #ff0000;
-  font: bold 10px Bangers;
+  color: black;
+  font: 15px Courier;
   margin: 0 50px 0 0;
   text-decoration: none;
+  display: inline-block;
 } 
 
 ul.newsticker span {
-  margin: 0 10px 0 0;
+  margin: 0 50px 0 0;
+  display: inline-block;
 } 
 
