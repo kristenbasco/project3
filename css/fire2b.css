@@ -1,0 +1,20 @@
+@import url('fire.css');
+
+#text1, #text2, #text3, #text4, #text5, #text6, #text7, #text8, #text9,
+#panel1, #panel2, #panel3, #panel4, #panel5{
+  position: relative;
+}
+
+#text1{
+  width: 360px;
+  top: 10px;
+  margin-left: 12%;
+}
+
+#begone img{
+  width: 120%;
+}
+
+.speech img{
+  width: 100%;
+}
