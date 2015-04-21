@@ -134,6 +134,27 @@
   top: -150px;
 }
 
-#borderlast{
-  padding-right: 100px;
+#cat7text{
+  position: absolute;
+  left: 2585px;
+  top: 80px;
+  width: 375px;
 }
+#cat7text a{
+  text-decoration: none;
+  color: black;
+}
+#cat7text a:hover{
+  color: gray;
+}
+#cat7{
+  position: absolute;
+  left: 2600px;
+  top: 130px;
+  padding-right: 200px;
+}
+/*#cat8{
+  position: absolute;
+  left: 2650px;
+  top: 200px;
+}*/

@@ -137,6 +137,32 @@ $('#myParallaxlast').parallax({
 	focusZ: 100
 }); 
 
+$('#myParallaxlastlast').parallax({
+	width: 300,  
+	height: 200,
+	enableMouse: true,
+	activateOnClick: false,
+	sensitivityX: 1,
+	sensitivityY: 0,
+	easingCoefficient: 7,
+	autoZCoordinate: true,
+	useCustomZ: true,
+	focusZ: 100
+}); 
+
+// $('#myParallaxlastlast2').parallax({
+// 	width: 247,  
+// 	height: 61,
+// 	enableMouse: true,
+// 	activateOnClick: false,
+// 	sensitivityX: 1,
+// 	sensitivityY: 1,
+// 	easingCoefficient: 7,
+// 	autoZCoordinate: true,
+// 	useCustomZ: true,
+// 	focusZ: 100
+// }); 
+
 
 // instead of brian stick name here. if the value of name is null, because nothing was input, brian is default
 $('#clickme').click(function(){
