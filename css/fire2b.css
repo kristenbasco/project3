@@ -7,7 +7,12 @@
 
 #text1{
   width: 360px;
-  top: 10px;
+  top: 300px;
+  margin-left: 12%;
+}
+
+#panel1{
+  top:300px;
   margin-left: 12%;
 }
 
@@ -17,4 +22,32 @@
 
 .speech img{
   width: 100%;
+}
+
+#text2{
+  width: 200px;
+  top: -250px;
+  left: 550px;
+}
+
+#panel2{
+  top: -250px;
+  left: 600px;
+  /*width: 800px;*/
+}
+
+#panel3{
+  top: -250px;
+  left: 600px;
+  /*width: 800px;*/
+}
+
+#text3{
+  width: 200px;
+  top: -500px;
+  left: 650px;
+}
+
+#up{
+  z-index: 50;
 }
