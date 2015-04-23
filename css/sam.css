@@ -7,9 +7,9 @@ body{
   background-color: rgba(255,255,0,.3);
   background-image: 
   radial-gradient(circle, orange 12%, transparent 10%),
-  radial-gradient(circle, red 12%, transparent 10%),
+  radial-gradient(circle, grey 12%, transparent 10%),
   radial-gradient(circle, orange 12%, transparent 10%),
-  radial-gradient(circle, red 12%, transparent 10%);
+  radial-gradient(circle, grey 12%, transparent 10%);
   background-size: 50px 50px;
   background-position: 0 0, 2.5px 2.5px, 25px 25px, 27.5px 27.5;
 }
@@ -138,15 +138,48 @@ animation-delay: .75s;
   overflow-y: hidden!important;/*
   background-color: rgba(0,0,0,.5);
   border-top: 10px solid rgba(0,0,0,.5) ;*/
+  z-index: 3;
 }
+
+/* Background */
+/*background city*/
 #anotherdiv{
   position: absolute;
-  /*left: -2.5%;*/
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 753px;
+  height: 100vh;
+  background: -webkit-linear-gradient(left top, rgba(255,153,0,0.5) , rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(255,153,0,0.5), rgba(255,0,0,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(255,153,0,0.5), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(255,153,0,0.5) , rgba(255,0,0,1)); /* Standard syntax (must be last) *//*background-size: 100% 100%;*/
+  z-index: -1;
+}
+
+#aseconddiv{
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('../img/city1.png');
   background-repeat: repeat-x;
-  background-size: 100% 100%;
+  background-size: 100% 50%;
+  z-index: -1;
+}
+
+#lastone{
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-linear-gradient(top, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, rgba(43,17,3,0) 30%, rgba(43,17,3,1) 40%); /* Standard syntax (must be last) *//*background-size: 100% 100%;*/
   z-index: -1;
 }
 
