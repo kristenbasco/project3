@@ -26,6 +26,23 @@
 	width: 60%;
 }
 
+#lady-fight img{
+
+	width: 60%;
+	
+}
+
+
+.exclaim-1 img{
+	width: 30%;
+	-ms-transform: rotate(15deg); 
+  	-webkit-transform: rotate(15deg); 
+  	transform: rotate(15deg);
+
+}
+
+
+
 #text1, #text2, #text3, #text4, #text5, #text6, #text7, #text8, #text9{
   position: absolute;
 }
@@ -36,12 +53,31 @@
   left: 250px;
 }
 
+#text3{
+  text-align: center;
+  width: 140px;
+  top: 9px;
+  left: 910px;
+  font-size: 1.4em;
+  opacity: 0;
+  -webkit-transition: opacity 2s; /* Safari */
+  transition: opacity 2s;
+}
 
 #text4w{
   width: 300px;
   left: 1200px;
   top: 25px;
 }
+
+#speech-panel2{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+
+
 
 /*
 

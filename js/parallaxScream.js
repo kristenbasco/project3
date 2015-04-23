@@ -13,12 +13,12 @@ $('#myParallax1').parallax({
 }); 
 
 $('#myParallax2').parallax({
-	width: 400,  
-	height: 341,
+	width: 587,  
+	height: 256,
 	enableMouse: true,
 	activateOnClick: false,
-	sensitivityX: 0,
-	sensitivityY: 1,
+	sensitivityX: 1,
+	sensitivityY: 0.3,
 	easingCoefficient: 7,
 	autoZCoordinate: true,
 	useCustomZ: true,
