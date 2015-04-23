@@ -130,7 +130,7 @@ $('#myParallax2').parallax({
 $('#myParallax2').mousemove(function(){
 	var position2 = $('#panel2').offset();
 	if(position2.left > 450){
-		$('#text2').html("<p>NOT NOW STEVE!</p>");
+		$('#text2').html("<p>NOT RIGHT NOW!</p>");
 		$('#text3').html("<p>Oh, uh... Sorry about that that!</p>");
 		/*$('#splode').attr("src","parallax/explosion.png").css("display","block");*/
 	}else if(position2.left <= 450){
