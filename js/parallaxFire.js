@@ -1,4 +1,4 @@
-// parallax
+
 $('#myParallax').parallax({
 	width: 386,  
 	height: 400,
