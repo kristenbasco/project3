@@ -1,0 +1,314 @@
+<!doctype>
+<head>
+	<title>Parallax Example</title>	
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="parallax/jquery.real-parallax.js"></script>
+	<script src="js/liscroll.js"></script>
+
+	<link type="text/css" href="css/reset.css" rel="stylesheet" />
+	<link type="text/css" href="css/parallax.css" rel="stylesheet" />
+	<link type="text/css" href="css/fire.css" rel="stylesheet" />
+</head>
+<body>
+<!-- 	<div class="intro">
+		<img src="resources/transparent/Beetle_Pop_Out_-_transparent.png" />
+		<button class="intro-button">
+        	<span>Begin</span>
+      	</button>
+      	<img src="parallax/bang.svg" />
+	</div> -->
+	
+	<div id="wholeshebang">
+		<div id="colwrap">
+
+			<!-- panel 1 -->
+			<div id="borderfirst">
+				<div class="thickborder">
+					<div class="outline">
+						<div id="myParallax" class="glowbox overflow-hidden">
+						  	<div id="l"></div>
+
+						  	<div style="left:-1px;top:-1px;background-image: url(img/fire_1/rooftop.png);background-repeat:repeat-x; height: 700px; width: 836px;" data-lock="yes"></div>
+
+						  	<div style="opacity:.6;" data-z="80">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+					   		<div style="" data-z="99">
+						   		<img src="img/fire_1/roofover.png"/>
+						   	</div>
+
+						   	<div style="left:-150px;top:-250px;" data-z="0">
+						   		<img src="img/fire_1/GreenHood_colorcorrect.png"/>
+						   	</div>
+
+						   	<div style="top:230px;left:200px;opacity:.8;" data-z="80">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						   	<div style="top:210px;left:220px;opacity:.9;" data-z="75">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						   	<div class="bigtext" style="width: 382px;top:278px;height:119px;" data-lock="yes">
+						   		<p>Awesome Man heads towards the source of the smoke. From his vantage point he can see that the fire department has nearly finished evacuating the building.</p>
+						   		<p id="right">But what's this?</p>
+						   	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- panel 2 -->
+			<div class="middlestuff" id="cat1">
+				<div class="thickborder">
+					<div class="outline">
+						<div id="myParallax2" class="glowbox overflow-hidden">
+						  	<div id="l"></div>
+
+						  	<div style="background-image: url(img/fire_1/pinkbuliding.png);background-repeat:repeat-x;width:140px;height:183px;" data-lock="yes"></div>
+						  	
+						  	<div data-z="99">
+						   		<img id="glow" src="img/fire_1/glow.png"/>
+						   	</div>
+
+						  	<div data-z="100">
+						   		<img src="img/fire_1/window.png"/>
+						   	</div>
+
+						  	<div style="top:100px;opacity:.5;" data-z="40">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						  	<div style="left:-100px;" data-z="75">
+						   		<img src="img/fire_1/open-flames.png"/>
+						   	</div>
+
+						   	<div style="top:100px;left:-90px;opacity:.2;" data-z="35">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text" id="cat1text">
+				<p>There in the window...</p>
+			</div>
+
+			<!-- panel 3 -->
+			<div class="middlestuff" id="cat2">
+				<div class="thickborder">
+					<div class="outline">
+						<div id="myParallax3" class="glowbox overflow-hidden">
+						  	<div id="l"></div>
+
+						  	<div style="background-image: url(img/fire_1/pinkwindowcat.png);background-repeat:repeat-x;width:61px;height:247px;" data-lock="yes"></div>
+
+
+						   	<div id="mewbig" style="top:55px;left:30px;" data-lock="yes">
+						   		<img src="img/fire_1/mewbig.png"/>
+						   	</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text" id="cat2text">
+				<p>A cat is trapped in the building!</p>
+			</div>
+
+
+			<!-- panel 4 -->
+			<div class="middlestuff" id="cat3">
+				<div class="thickborder">
+					<div class="outline">
+						<div id="myParallax4" class="glowbox overflow-hidden">
+						  	<div id="l"></div>
+
+						  	<div style="left:-1px;top:-1px;background-image: url(img/fire_1/buildingfront.png);background-repeat:repeat-x; height: 700px; width: 836px;" data-lock="yes"></div>
+						  	
+						  	<div id="fire1" style="left:-90px;" data-z="96">
+						   		<img src="img/fire_1/fire.png"/>
+						   	</div>
+
+						  	<div style="left:100px;top:20px;opacity:.6;" data-z="88">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						  	<div style="left:150px;top:20px;opacity:.4;" data-z="90">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						  	<div style="left:-150px;top:-100px;" data-z="92">
+						   		<img src="img/fire_1/open-flames.png"/>
+						   	</div>
+
+						   	<div id="fire2" style="left:50px;" data-z="80">
+						   		<img src="img/fire_1/fire.png"/>
+						   	</div>
+
+					   		<div style="" data-lock="yes">
+						   		<img src="img/fire_1/frontbuildingfront.png"/>
+						   	</div>
+
+						   	<div style="left:300px;top:170px;opacity:.8;" data-z="80">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						   	<div style="left:320px;top:180px;opacity:.4;" data-z="75">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						   	<div style="left:320px;top:180px;opacity:.4;" data-z="75">
+						   		<img src="img/fire_1/smoke.png"/>
+						   	</div>
+
+						   	<div id="catspeech" style="top:125px;left:-30px;" data-z="98">
+						   		<img src="img/fire_1/myfelinefriend.png"/>
+						   	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text" id="butbefore">
+				<p>But before awesome man can come to the rescue, another hero rushes the building.</p>
+			</div>
+
+			<!-- last one I think -->
+			<div class="middlestuff" id="cat4">
+				<div class="thickborder">
+					<div class="outline">
+						<div id="myParallaxlast" class="glowbox overflow-hidden">
+						  	<div id="l"></div>
+
+						  	<div style="background-image: url(img/fire_1/enterbuilding.png);background-repeat:repeat-x; width: 266px; height: 231px;" data-lock="yes"></div>
+						
+							<div id="fire1" style="left:-150px;top:-10px;" data-z="80">
+						   		<img src="img/fire_1/fire.png"/>
+						   	</div>
+
+						   	<div style="left:142.5px;" data-z="70">
+						   		<img src="img/fire_1/junglemanvine.png"/>
+						   	</div>
+
+						   	</div>
+
+						   	<div class="bigtext" style="top:8px;" data-lock="yes">
+						   		<p>Aaaaaaah-ah-ah-ah-aaaaah-ah-ah-ah-aaaaaaaaah!</p>
+						   	</div>
+						</div>
+					</div>
+<!-- 					<div class="text" id="aaaaugh">
+						<p>Aaaaaaah-ah-ah-ah-aaaaah-ah-ah-ah-aaaaaaaaah!</p>
+					</div> -->
+				</div>
+			</div>
+
+			<div id="cat5">
+				<div id="karack">
+					<img src="img/fire_1/Ka-rack.png"/>
+				</div>
+				<div class="text" id="whatwillhappen1">
+					<p>Upon entering the building Brad Jungleman, Awesome Man's dear friend, becomes trapped as the ceiling collapses!</p>
+				</div>
+			</div>
+
+<!-- 			<div id="borderlast"> -->
+				<div id="cat6">
+					<div id="bradno">
+						<img src="img/fire_1/bradno.png"/>
+					</div>
+					<div id="brad">
+						<img src="img/fire_1/brad.png"/>
+					</div>
+					<div class="text" id="whatwillhappen2">
+						<p>Awesome man calls after his friend, but to no avail...</p>
+					</div>
+					<div id="nobrad">
+						<img src="img/fire_1/nobrad.png"/>
+					</div>
+				</div>
+			<!-- </div> -->
+
+			<div class="text" id="cat7text">
+				<p>Now Awesome Man must make a choice.</p>
+			</div>
+
+			<div id="cat7">
+				<div class="thickborder">
+					<div class="outline">
+						<div id="myParallaxlastlast" class="glowbox overflow-hidden">
+						  	<div id="l"></div>
+
+						  	<div style="background-image: url(img/fire_1/pinkbuliding.png);background-repeat:repeat;height:200px;width:300px;" data-lock="yes"></div>
+
+
+						  	<div style="left:-280px;" data-z="70">
+						   		<img src="img/fire_1/Flame_002.png"/>
+						   	</div>
+
+						   	<div class="bigtext" style="" data-lock="yes">
+						   		<a href="fire2b.html"><p>Save the city...</p></a>
+						   	</div>
+
+						   	<div class="bigtext" style="right:0;bottom:0;width:180px;" data-lock="yes">
+						   		<a href="#"><p>...or his friend</p></a>
+						   	</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<!-- <p id="error"></p> -->
+	</div>
+
+	<!-- moving -->
+	<div class="arrows">
+		<div class="arrowleft">
+			<img src="parallax/right.png" alt="for navigating the whatsit">
+		</div>
+		<div class="arrowright">
+			<img src="parallax/right.png" alt="for navigating the whatsit">
+		</div>
+	</div>
+
+
+	<!-- background stuff -->
+	<div id="anotherdiv"></div>
+	<div id="aseconddiv"></div>
+	<div id="lastone"></div>
+
+
+	<!-- breaking news -->
+	<div id="globe">
+		<div id="spinnybit">
+			<img src="img/dothatching.png" alt="spinny bit for the news">
+		</div>
+		<div id="mainbody">
+			<ul id="ticker01">
+				<li><span>Breaking news</span></li>
+				<li><p>WKCD news at 6...</p></li>
+				<li><p>Awesome Man has arrived at the scene of a fire on 31st street...</p></li>
+				<li><p>Expect traffic delays...</p></li>
+				<li><span>Breaking news</span></li>
+				<li><p>Also on the scene is fellow hero Brad Jungleman...</p></li>
+				<li><p>We wait at the scene as events unfold...</p></li>
+			</ul>
+<!-- 			<ul id="ticker01">
+				<li><a href="#">The first thing ...</a></li>
+				<li><a href="#">End up doing is ...</a></li>
+				<li><span>October</span><a href="#">The code that you ...</a></li>
+			</ul> -->
+		</div>
+		<!-- 	-Awesome man has failed. The city has fallen. Everyone is dead. Hope is gone. May the sweet abyss of nothingness engulf us soon…And remember to tune into KXCY at 5 where we will be discussing the phrase “It’s raining cats and dogs,” innocent colloquialism? Or science experiment gone horribly awry? This is Patty O'Day, signing off. -->
+	</div>
+	<script src="js/arrows.js"></script>
+	<script src="js/parallaxFire.js"></script>
+</body>

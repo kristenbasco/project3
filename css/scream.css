@@ -1,0 +1,56 @@
+
+@import url('fire2b.css');
+
+
+
+.flip-H{
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+#bubble{
+	position: absolute;
+  	left: 10px;
+  	top: 100px;
+  	width:315px;
+  	-ms-transform: rotate(-10deg); 
+  	-webkit-transform: rotate(-10deg); 
+  	transform: rotate(-10deg);
+}
+
+#bubble img{
+	width: 60%;
+}
+
+#text1, #text2, #text3, #text4, #text5, #text6, #text7, #text8, #text9{
+  position: absolute;
+}
+
+#text2{
+  width: 300px;
+  top: 350px;
+  left: 250px;
+}
+
+
+#text4w{
+  width: 300px;
+  left: 1200px;
+  top: 25px;
+}
+
+/*
+
+#textpanel-1{
+	width: 300px;
+  	left: 500px;
+}
+
+#panel1, #panel2, #panel3, #panel4, #panel5{
+  position: relative;
+}*/
+
