@@ -42,6 +42,7 @@
   position: absolute;
   top: 100px;
   left: 1850px;
+  padding-right: 200px;
 }
 
 
@@ -180,9 +181,14 @@
   top: 70px;
 }
 
+.end a{
+  text-decoration: none;
+}
+
 .end p{
   font-size: 7em;
   font-family: 'Bangers', cursive;
+  text-decoration: none;
   color: red;
   -webkit-transition: text-shadow 0.5s linear;
   -moz-transition: text-shadow 0.5s linear;
