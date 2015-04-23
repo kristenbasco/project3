@@ -246,10 +246,10 @@ $('#myParallax6').parallax({
 
 $('#myParallax6').mousemove(function(){
 	var position2 = $('#panel4').offset();
-	if(position2.left > 500){
+	if(position2.left > 600){
 		$('#text2').html("<p>Quick! Make a decision!</p>");
 		/*$('#splode').attr("src","parallax/explosion.png").css("display","block");*/
-	}else if(position2.left <= 500){
+	}else if(position2.left <= 600){
 		$('#text2').html("<p>Our city needs us...</p>");
 	}
 });
