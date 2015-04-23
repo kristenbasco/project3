@@ -6,8 +6,27 @@ var width = window.innerWidth;
 var height = height-753;
 var width = width*.8;
 
+/*
 $('.intro-button').on('click', function(event) {
   $(this).closest('.intro').addClass('intro-offscreen');
+});
+*/
+
+$(document).ready(function(){
+	var cssProperties = { right: '100vw',  }
+
+	$('.intro-button').click(function() {
+  		$('#intro').animate({
+  		 width: '0',
+  		 }, 750, function () {  
+  		});
+	});
+
+    /*
+    $(".intro-button").click(function(){
+        $("#intro").slideUp(600);
+    });
+	*/
 });
 
 $(function(){
@@ -130,7 +149,7 @@ $('#myParallax2').parallax({
 $('#myParallax2').mousemove(function(){
 	var position2 = $('#panel2').offset();
 	if(position2.left > 450){
-		$('#text2').html("<p>NOT RIGHT NOW!</p>");
+		$('#text2').html("<p>NOT NOW STEVE!</p>");
 		$('#text3').html("<p>Oh, uh... Sorry about that that!</p>");
 		/*$('#splode').attr("src","parallax/explosion.png").css("display","block");*/
 	}else if(position2.left <= 450){
