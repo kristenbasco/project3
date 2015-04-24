@@ -148,11 +148,11 @@ $('#myParallax2').parallax({
 
 $('#myParallax2').mousemove(function(){
 	var position2 = $('#panel2').offset();
-	if(position2.left > 450){
+	if(position2.left > 550){
 		$('#text2').html("<p>NOT NOW STEVE!</p>");
 		$('#text3').html("<p>Oh, uh... Sorry about that that!</p>");
 		/*$('#splode').attr("src","parallax/explosion.png").css("display","block");*/
-	}else if(position2.left <= 450){
+	}else if(position2.left <= 550){
 		$('#text2').html("<p>First things first-</p>");
 		$('#text3').html("<p>Is this the new guy? Hi, I'm --</p>");
 	}
@@ -206,7 +206,7 @@ $('#myParallax4').mousemove(function(){
 
 $('#myParallax5').parallax({
 	width: 836,  
-	height: 600,
+	height: 500,
 	enableMouse: true,
 	activateOnClick: false,
 	sensitivityX: 1,
