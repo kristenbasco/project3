@@ -228,6 +228,12 @@ animation-delay: .75s;
   /*margin-left: 10%;*/
 }
 
+#myParallax2 {
+  background-image: url('../resources/transparent/Simple-Buildings.png');
+  background-repeat: no-repeat;
+
+}
+
 #end-div {
   display: inline-block;
   margin-left: 5%;
