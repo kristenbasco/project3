@@ -12,7 +12,7 @@
 	-ms-filter: "FlipH";
 }
 
-#bubble{
+#ahh{
 	position: absolute;
   	left: 10px;
   	top: 100px;
@@ -22,7 +22,7 @@
   	transform: rotate(-10deg);
 }
 
-#bubble img{
+#ahh img{
 	width: 60%;
 }
 
@@ -30,6 +30,11 @@
 
 	width: 60%;
 	
+}
+
+#rawr img{
+	
+	width: 150px;
 }
 
 
@@ -41,42 +46,127 @@
 
 }
 
+#monster-smile img{
+	width: 200px;
+}
 
 
-#text1, #text2, #text3, #text4, #text5, #text6, #text7, #text8, #text9{
+
+#panel3a,  #panel4a, #panel5a, #text1, #text2a, #text4a, #text5a, #text6a, #monster-text{
   position: absolute;
 }
 
-#text2{
+
+#text2a{
   width: 300px;
-  top: 350px;
+  top: 240px;
   left: 250px;
 }
 
-#text3{
-  text-align: center;
-  width: 140px;
-  top: 9px;
-  left: 910px;
-  font-size: 1.4em;
-  opacity: 0;
-  -webkit-transition: opacity 2s; /* Safari */
-  transition: opacity 2s;
-}
-
-#text4w{
+#text5a{
   width: 300px;
-  left: 1200px;
-  top: 25px;
-}
+  left: 1356px;
+  top: 0px;
 
-#speech-panel2{
-  position: absolute;
-  left: 10px;
-  top: 10px;
 }
 
 
+#text6a{
+  	left: 2160px;
+  	top: 260px;
+  	width: 300px;
+  	padding-right: 150px;
+}
+
+#monster-text{
+ 	width: 300px;
+	left: 1835px;
+  	top:40px;
+}
+
+#panel3a{
+  	top: 60px;
+  	left: 1335px;
+}
+
+
+#panel4a{
+  	top: 60px;
+  	left: 1735px;
+}
+
+#panel5a{
+  	top: 10px;
+  	left: 2190px;
+  	margin-right: 100px!important;
+}
+
+
+
+
+#rawr-bubble{
+	position: absolute;
+	left: 1275px;
+	top: 185px;
+	-ms-transform: rotate(-15deg); 
+  	-webkit-transform: rotate(-15deg); 
+  	transform: rotate(-15deg);
+}
+
+#question{
+	position: absolute;
+	left: 1500px;
+	top: 100px;
+	-ms-transform: rotate(15deg); 
+  	-webkit-transform: rotate(15deg); 
+  	transform: rotate(15deg);
+
+
+}
+
+#question img{
+	width: 80px;
+}
+
+
+#question-bubble{
+	position: absolute;
+	left: 1590px;
+	top:35px;
+	
+
+}
+
+#question-bubble #isthat img{
+	width: 130px;
+}
+
+#question-bubble #ohmy img{
+	position: absolute;
+	width: 200px;
+	top: 100px;
+	left: -20px;
+}
+
+
+#question2{
+	position: absolute;
+	left: 2330px;
+	top: 140px;
+	-ms-transform: rotate(-35deg); 
+  	-webkit-transform: rotate(-35deg); 
+  	transform: rotate(-35deg);
+}
+
+#question2 img{
+	width: 70px;
+}
+
+#rotate-smoke img{
+	-ms-transform: rotate(30deg); 
+  	-webkit-transform: rotate(30deg); 
+  	transform: rotate(30deg);
+}
 
 
 /*

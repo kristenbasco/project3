@@ -25,6 +25,46 @@ $('#myParallax2').parallax({
 	focusZ: 100
 }); 
 
+$('#myParallax2a').parallax({
+	width: 146,  
+	height: 138,
+	enableMouse: true,
+	activateOnClick: false,
+	sensitivityX: 1,
+	sensitivityY: 0.3,
+	easingCoefficient: 7,
+	autoZCoordinate: true,
+	useCustomZ: true,
+	focusZ: 100
+}); 
+
+$('#myParallax3a').parallax({
+	width: 226,  
+	height: 203,
+	enableMouse: true,
+	activateOnClick: false,
+	sensitivityX: 0,
+	sensitivityY: 1,
+	easingCoefficient: 8,
+	autoZCoordinate: true,
+	useCustomZ: true,
+	focusZ: 100
+}); 
+
+$('#myParallax4a').parallax({
+	width: 300,  
+	height: 201,
+	enableMouse: true,
+	activateOnClick: false,
+	sensitivityX: 1,
+	sensitivityY: 1,
+	easingCoefficient: 8,
+	autoZCoordinate: true,
+	useCustomZ: true,
+	focusZ: 100
+}); 
+
+
 $('#myParallax2').hover(function(){
 	$('#catman img').css("opacity","1");
 	$('#text3').css("opacity","1");
