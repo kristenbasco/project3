@@ -1,0 +1,284 @@
+
+@import url('scream.css');
+
+
+
+#pow img{
+  width: 180px;
+  -ms-transform: rotate(5deg); 
+  -webkit-transform: rotate(5deg); 
+  transform: rotate(5deg);
+
+}
+
+
+
+#blush, #heart_group, {
+	opacity: 0;
+	-webkit-transition: opacity 0.5s; /* Safari */
+  	transition: opacity 0.5s;
+
+}
+
+#uh{
+	opacity: 0;
+	-webkit-transition: opacity 0.5s; /* Safari */
+  	transition: opacity 0.5s;
+
+	top: 100px;
+  	left: 1200px;
+}
+
+#uh img{
+	width: 200px;
+	-ms-transform: rotate(-23deg); 
+  	-webkit-transform: rotate(-23deg); 
+  	transform: rotate(-23deg);
+}
+
+
+#pow{
+	top: 300px;
+  	left: 460px;
+}
+
+.flip-H{
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+
+#ahh{
+	position: absolute;
+  	left: 10px;
+  	top: 100px;
+  	width:315px;
+  	-ms-transform: rotate(-10deg); 
+  	-webkit-transform: rotate(-10deg); 
+  	transform: rotate(-10deg);
+}
+
+#ahh img{
+	width: 60%;
+}
+
+#lady-fight img{
+
+	width: 60%;
+	
+}
+
+#rawr img{
+	
+	width: 150px;
+}
+
+#monster-hearts-you{
+	top:300px;
+	left: 2050px;
+}
+
+
+#monster-hearts-you img{
+	width: 80px;
+	-ms-transform: rotate(35deg); 
+  	-webkit-transform: rotate(35deg); 
+  	transform: rotate(35deg);
+
+}
+
+#am-1{
+	-ms-transform: rotate(-20deg); 
+  	-webkit-transform: rotate(-20deg); 
+  	transform: rotate(-20deg);
+}
+
+
+.exclaim-1 img{
+	width: 30%;
+	-ms-transform: rotate(15deg); 
+  	-webkit-transform: rotate(15deg); 
+  	transform: rotate(15deg);
+
+}
+
+#monster-smile img{
+	width: 200px;
+}
+
+
+
+
+#pow,#panel3a, #uh,  #panel4a, #panel5a, #text1a, #text2a, #text4a, #text5a, #text6a, 
+#monster-text, #text-uncomfortable, #text-flattered, #text-movingalong, #monster-hearts-you, .p_end, .end, #end{
+  position: absolute;
+}
+
+
+#text1a{
+  width: 360px;
+  margin-left: 12%;
+}
+
+
+
+#text2a{
+  width: 300px;
+  top: 240px;
+  left: 350px;
+}
+
+#text5a{
+  width: 300px;
+  left: 1030px;
+  top: 340px;
+
+}
+
+
+#text6a{
+  	left: 2160px;
+  	top: 260px;
+  	width: 300px;
+  	padding-right: 150px;
+}
+
+#text-uncomfortable{
+
+  	width: 300px;
+  	left: 1356px;
+  	top: 0px;
+ 
+}
+
+#text-flattered{
+	width: 200px;
+	left: 1506px;
+  	top: 300px;
+}
+
+#text-movingalong{
+	top: 30px;
+  	left: 1755px;
+  	width: 400px;
+
+}
+#monster-text{
+ 	width: 300px;
+	left: 1835px;
+  	top:40px;
+}
+
+
+#panel3a{
+  	top: 60px;
+  	left: 1305px;
+}
+
+
+#panel4a{
+  	top: 140px;
+  	left: 1795px;
+}
+
+
+
+
+#rawr-bubble{
+	position: absolute;
+	left: 1275px;
+	top: 185px;
+	-ms-transform: rotate(-15deg); 
+  	-webkit-transform: rotate(-15deg); 
+  	transform: rotate(-15deg);
+}
+
+#question{
+	position: absolute;
+	left: 1500px;
+	top: 100px;
+	-ms-transform: rotate(15deg); 
+  	-webkit-transform: rotate(15deg); 
+  	transform: rotate(15deg);
+
+
+}
+
+#question img{
+	width: 80px;
+}
+
+
+#question-bubble{
+	position: absolute;
+	left: 1590px;
+	top:35px;
+	
+
+}
+
+#question-bubble #isthat img{
+	width: 130px;
+}
+
+#question-bubble #ohmy img{
+	position: absolute;
+	width: 200px;
+	top: 100px;
+	left: -20px;
+}
+
+
+#question2{
+	position: absolute;
+	left: 2330px;
+	top: 140px;
+	-ms-transform: rotate(-35deg); 
+  	-webkit-transform: rotate(-35deg); 
+  	transform: rotate(-35deg);
+}
+
+#question2 img{
+	width: 70px;
+}
+
+#rotate-smoke img{
+	-ms-transform: rotate(30deg); 
+  	-webkit-transform: rotate(30deg); 
+  	transform: rotate(30deg);
+}
+#end{
+  position: absolute;
+  top: 200px;
+  left: 2200px;
+  padding-right: 30%;
+}
+
+.end a{
+  text-decoration: none;
+}
+
+.end p{
+  font-size: 7em;
+  font-family: 'Bangers', cursive;
+  text-decoration: none;
+  color: red;
+  -webkit-transition: text-shadow 0.5s linear;
+  -moz-transition: text-shadow 0.5s linear;
+  -ms-transition: text-shadow 0.5s linear;
+  -o-transition: text-shadow 0.5s linear;
+  transition: text-shadow 0.5s linear;
+
+  -ms-transform: rotate(-8deg); 
+  -webkit-transform: rotate(-8deg); 
+  transform: rotate(-8deg);
+
+}
+
+.end:hover, .end.glow{
+  text-shadow: 3px 3px 13px rgba(255,255,255,0.4);
+}

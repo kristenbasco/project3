@@ -212,6 +212,7 @@ body{
   background-color: white;
   border: 2px black solid;
   font-size: 0.9em;
+  line-height: 15px;
   -webkit-transform: skewX(160deg);
   -ms-transform: skewX(160deg);
   transform: skewX(160deg);
@@ -226,6 +227,7 @@ body{
 .bigtext{
   font-family: 'AA Regular', cursive;
   background-color: white;
+  line-height: 15px;
   border: 2px black solid;
   font-size: .9em;
   white-space: normal;      /* CSS3 */   
